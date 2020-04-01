@@ -68,16 +68,15 @@ header
     margin: 25px
     color: $dark-pink
 
-
 .home-content
   display: flex
   align-items: center
   &__text
-    width: 50%
     display: flex
     flex-direction: column
     align-items: center
-    margin-top: 250px 
+    margin-top: 250px
+    width: 50%
     p 
       color: $black
       font-family: 'Roboto', sans-serif
@@ -92,7 +91,6 @@ header
       font-size: 50px
       color: $black
       margin-top: 0
-      // font-weight: normal
 
 .wrraper-home-content__text__cactus
   display: flex
@@ -104,7 +102,6 @@ header
     font-size: 50px
     color: $black
     margin-bottom: 0
-    // font-weight: bold
 
 .pink-text
   h1
@@ -112,8 +109,6 @@ header
     margin-right: 5px
     font-family: 'Roboto', sans-serif
     font-size: 50px
-    // font-weight: bold
-
 
 .home-content__button
   button
@@ -130,7 +125,7 @@ header
   overflow: hidden
   width: 600px
   height: 600px
-  background: url(/img/flower.jpg) no-repeat center center / cover
+  background: url(../img/flower.jpg) no-repeat center center / cover
 
 .services
   display: flex
@@ -138,19 +133,16 @@ header
   margin: 0
   height: 100vh
   background-color: $white
-  // align-items: center
   justify-content: space-around
   &__content
     display: flex
     flex-direction: column
-    // align-content: center
     justify-content: space-around
     width: 100%
     height: 90%
     &__button
       display: flex
       justify-content: center
-      // box-shadow: $shadow
       button
         width: 280px
         height: 60px
@@ -228,4 +220,64 @@ header
       background-color: $black 
       border-color: $black
       margin: 20px
-      
+
+
+.about
+  height: 100vh
+  background-color: $white
+  margin: 0
+  &__content
+    display: flex
+    &__img
+      img 
+        width: 530px
+        margin-left: 80px
+    &__text
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-around
+      width: 50%
+      margin-left: 80px
+      &__name-page
+        display: flex
+        flex-direction: column
+        align-items: center
+        h1
+          color: $black 
+          font-size: 30px
+          text-transform: uppercase
+          font-family: 'Roboto', sans-serif
+        &__img
+          display: flex
+          hr 
+            width: 50px
+            height: 0.2px
+            background-color: $black
+            border-color: $black 
+            margin: 20px
+          img 
+            width: 30px
+            height: 30px
+      &__main-text
+        display: flex
+        flex-direction: column
+        h1 
+          text-align: center
+          color: $black 
+          font-size: 18px
+          font-family: 'Roboto', sans-serif
+        p 
+          text-align: center
+          color: $black 
+          font-size: 18px
+          font-family: 'Roboto', sans-serif
+      &__button
+        button
+          width: 280px
+          height: 60px
+          background-color: $dark-pink 
+          border-radius: 25px
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.150)
+        h1 
+          color: $white 
