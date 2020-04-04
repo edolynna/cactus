@@ -115,11 +115,13 @@ header
     width: 350px
     height: 80px
     background-color: $dark-pink
-    border-radius: 25px
+    border-radius: 35px
     border-color: $dark-pink
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.150)
     h1
       color: $white
+      font-size: 30px
+      font-family: 'Roboto', sans-serif
 
 .home-content__img 
   overflow: hidden
@@ -127,7 +129,7 @@ header
   height: 600px
   background: url(../img/flower.jpg) no-repeat center center / cover
 
-.services
+.advantages
   display: flex
   flex-direction: column
   margin: 0
@@ -147,11 +149,13 @@ header
         width: 280px
         height: 60px
         background-color: $dark-pink
-        border-radius: 25px
+        border-radius: 30px
         border-color: $dark-pink
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.150)
         h1
           color: $white
+          font-size: 20px
+          font-family: 'Roboto', sans-serif
   &__content__name 
     display: flex
     justify-content: center
@@ -265,19 +269,101 @@ header
         h1 
           text-align: center
           color: $black 
-          font-size: 18px
+          font-size: 17px
           font-family: 'Roboto', sans-serif
         p 
           text-align: center
           color: $black 
-          font-size: 18px
+          font-size: 17px
           font-family: 'Roboto', sans-serif
       &__button
         button
           width: 280px
           height: 60px
-          background-color: $dark-pink 
-          border-radius: 25px
+          background-color: $dark-pink
+          border-color: $dark-pink 
+          border-radius: 30px
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.150)
         h1 
-          color: $white 
+          color: $white
+          font-size: 20px
+          font-family: 'Roboto', sans-serif
+
+.services
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 100vh
+  background-color: $white
+  margin: 0
+  &__content
+    display: flex
+    flex-direction: column
+    &__items
+      display: flex
+      width: 100%
+      #services-content_img_1, #services-content_img_2, #services-content_img_3
+        background-color: $light-pink
+      &-content
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-around
+        width: 270px
+        height: 270px
+        background-color: $white
+        margin: 50px
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.150)
+        &__name
+          h1
+            font-size: 20px
+            font-family: 'Roboto', sans-serif
+        &__img
+          display: flex
+          align-items: center
+          justify-content: center
+          width: 55px
+          height: 55px
+          background-color: $dark-pink
+          border-radius: 50%
+          img 
+            width: 60px
+            height: 60px
+        &__button
+          button
+            width: 140px
+            height: 30px
+            background-color: $dark-pink
+            border-color: $dark-pink
+            border-radius: 15px
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.150)
+            h1 
+              color: $white 
+              font-size: 13px
+              font-family: 'Roboto', sans-serif
+              margin: 0
+
+footer 
+  height: 50vh
+  display: flex
+  justify-content: space-around
+  background-color: $dark-pink
+  .footer
+    // margin-top: 30px
+    h1 
+      font-size: 20px
+      color: $white
+      font-family: 'Roboto', sans-serif
+      margin-top: 50px
+      // margin-left: 20px
+    p 
+      font-size: 20px
+      color: $white
+      font-family: 'Roboto', sans-serif
+      margin: 0
+    &__media 
+      img
+        width: 35px
+        height: 35px
+        margin: 5px
+        // color: $white
