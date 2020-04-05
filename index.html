@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="modal-windows.js" defer></script>
   <title>CactUs</title>
 </head>
 <body>
@@ -24,9 +25,9 @@
         <div class="menu">
           <nav class="menu__nav">
             <a href="" class="menu__nav__link">Home</a>
+            <a href="" class="menu__nav__link">About</a>
             <a href="" class="menu__nav__link">Services</a>
             <a href="" class="menu__nav__link">Price</a>
-            <a href="" class="menu__nav__link">About</a>
             <a href="" class="menu__nav__link">Contact</a>
           </nav>
         </div>
@@ -47,7 +48,7 @@
           </div>
           <p>There is nothing that makes its way more directly  into the soul than beauty.</p>
           <div class="home-content__button">
-            <button><h1>Get A Time</h1></button>
+            <button>Get A Time</button>
           </div>
         </div>
         <div class="home-content__img"></div>
@@ -105,7 +106,7 @@
         <hr>
       </div>
       <div class="advantages__content__button">
-          <button><h1>Get A Time</h1></button>
+          <button>Get A Time</button>
       </div>
     </div>
   </section>
@@ -141,13 +142,267 @@
             proud and beautiful stories are with CactUs.</p>
         </div>
         <div class="about__content__text__button">
-            <button><h1>Get A Time</h1></button>
+            <button>Get A Time</button>
         </div>
       </div>
     </div>
   </section>
 
   <section class="services">
+    <div class="modal-window-nail">
+      <span onclick="closePriceNails()"><img src="icon/mark.svg" alt="mark"></span>
+      <div class="modal-window-nail__img">
+        <!-- <img src="img/price-nails.jpeg" alt="price-nails"> -->
+      </div>
+      <div class="modal-window-nail__content">
+        <h2>Nails</h2>
+        <div class="modal-window-nail__content__text">
+          <div class="modal-window-nail__content__text__name">
+            <ul>
+              <li><h2>Services</h2></li>
+              <li>Classic edged manicure</li>
+              <li>Combined manicure (classic + hardware)</li>
+              <li>Children’s manicure</li>
+              <li>Paraffin therapy</li>
+              <li>Protein coating</li>
+              <li>Nail shape</li>
+              <li>Nail repair</li>
+              <li>Hand massage</li>
+              <li>Classic pedicure</li>
+              <li>Acid Pedicure</li>
+              <li>Foot massage</li>
+              <li>Gel polish NUB</li>
+              <li>Gel polish Luxio</li>
+              <li>Gel polish VIKA / THINK OF NAIL</li>
+              <li>Removing gel polish</li>
+            </ul>
+          </div>
+          <div class="modal-window-nail__content__text__cost">
+            <ul>
+              <li><h2>Price</h2></li>
+              <li>$20</li>
+              <li>$25</li>
+              <li>$15</li>
+              <li>$15</li>
+              <li>$5</li>
+              <li>$2</li>
+              <li>$2</li>
+              <li>$10</li>
+              <li>$20</li>
+              <li>$35</li>
+              <li>$15</li>
+              <li>$30</li>
+              <li>$35</li>
+              <li>$35</li>
+              <li>$5</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-window-makeup">
+      <span onclick="closePriceMakeUp()"><img src="icon/mark.svg" alt="mark"></span>
+      <div class="modal-window-makeup__img">
+        <!-- <img src="img/price-makeup.png" alt="price-makeup"> -->
+      </div>
+      <div class="modal-window-makeup__content">
+        <h2>Makeup</h2>
+        <div class="modal-window-makeup__content__text">
+          <div class="modal-window-makeup__content__text__name">
+            <ul>
+              <li><h2>Services</h2></li>
+              <li>Express Make Up</li>
+              <li>Express Make Up TOP</li>
+              <li>Day Make Up</li>
+              <li>Cocktail Make Up</li>
+              <li>Night Make Up</li>
+              <li>Fashion Make Up</li>
+              <li>Wedding Make Up</li>
+              <li>False eyelashes</li>
+              <li>Patches</li>
+              <li>Halloween 1</li>
+              <li>Halloween 2</li>
+            </ul>
+          </div>
+          <div class="modal-window-makeup__content__text__cost">
+            <ul>
+              <li><h2>Price</h2></li>
+              <li>$30</li>
+              <li>$40</li>
+              <li>$25</li>
+              <li>$30</li>
+              <li>$35</li>
+              <li>$55</li>
+              <li>$100</li>
+              <li>$10</li>
+              <li>$5</li>
+              <li>20</li>
+              <li>$30</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-window-eyebrows">
+      <span onclick="closePriceEyebrows()"><img src="icon/mark.svg" alt="mark"></span>
+      <div class="modal-window-eyebrows__img">
+        <!-- <img src="img/price-eyelash.jpeg" alt="price-makeup"> -->
+      </div>
+      <div class="modal-window-eyebrows__content">
+        <h2>Eyebrows and Eyelashes</h2>
+        <div class="modal-window-eyebrows__content__text">
+          <div class="modal-window-eyebrows__content__text__name">
+            <ul>
+              <li><h2>Services</h2></li>
+              <li>Eyebrow modeling</li>
+              <li>Eyebrow tinting</li>
+              <li>THUYA Eyebrow Tint</li>
+              <li>Waxing Eyebrow</li>
+              <li>Eyebrow Lamination</li>
+              <li>Eyelash tinting</li>
+              <li>Eyelash Lamination</li>
+            </ul>
+          </div>
+          <div class="modal-window-eyebrows__content__text__cost">
+            <ul>
+              <li><h2>Price</h2></li>
+              <li>$20</li>
+              <li>$25</li>
+              <li>$30</li>
+              <li>$20</li>
+              <li>$40</li>
+              <li>$30</li>
+              <li>$50</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-window-cosmetology">
+      <span onclick="closePriceCosmetology()"><img src="icon/mark.svg" alt="mark"></span>
+      <div class="modal-window-cosmetology__img">
+        <!-- <img src="img/price-cosmetologi.jpeg" alt="price-cosmetologi"> -->
+      </div>
+      <div class="modal-window-cosmetology__content">
+        <h2>Cosmetology</h2>
+        <div class="modal-window-cosmetology__content__text">
+          <div class="modal-window-cosmetology__content__text__name">
+            <ul>
+              <li><h2>Services</h2></li>
+              <li>Facial Cleansing</li>
+              <li>Ultrasonic face peel</li>
+              <li>Acid Peeling</li>
+              <li>Fruit face peeling</li>
+              <li>Acne</li>
+              <li>Face and neck massage</li>
+              <li>Photorejuvenation</li>
+              <li>RF-lifting</li>
+              <li>Beauty Injections</li>
+            </ul>
+          </div>
+          <div class="modal-window-cosmetology__content__text__cost">
+            <ul>
+              <li><h2>Price</h2></li>
+              <li>$30</li>
+              <li>$45</li>
+              <li>$30</li>
+              <li>$30</li>
+              <li>$15</li>
+              <li>$30 - 100</li>
+              <li>$50 - 200</li>
+              <li>$50 - 200</li>
+              <li>$200 - 500</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-window-hair">
+      <span onclick="closePriceHair()"><img src="icon/mark.svg" alt="mark"></span>
+      <div class="modal-window-hair__img">
+        <!-- <img src="img/price-hair.jpeg" alt="price-hair"> -->
+      </div>
+      <div class="modal-window-hair__content">
+        <h2>Hair</h2>
+        <div class="modal-window-hair__content__text">
+          <div class="modal-window-hair__content__text__name">
+            <ul>
+              <li><h2>Services</h2></li>
+              <li>Model haircut 1, 2, 3 length</li>
+              <li>Haircut 1, 2, 3 length</li>
+              <li>Haircut 4, 5 length</li>
+              <li>Tip cutting</li>
+              <li>Bangs</li>
+              <li>Baby haircut</li>
+              <li>HP Root Staining</li>
+              <li>HP Tone Tone 1 length</li>
+              <li>HP Tone Tone 2 length</li>
+              <li>HP Tone Tone 3 length</li>
+              <li>Toning HP 1 length</li>
+              <li>Toning HP 2 length</li>
+              <li>Toning HP 3 length</li>
+              <li>Blonding HP 1 length</li>
+              <li>Blonding HP 2 length</li>
+              <li>Blonding HP 2 length</li>
+            </ul>
+          </div>
+          <div class="modal-window-hair__content__text__cost">
+            <ul>
+              <li><h2>Price</h2></li>
+              <li>$20</li>
+              <li>$25</li>
+              <li>$30</li>
+              <li>$20</li>
+              <li>$40</li>
+              <li>$30</li>
+              <li>$50</li>
+              <li>$50</li>
+              <li>$60</li>
+              <li>$70</li>
+              <li>$50</li>
+              <li>$60</li>
+              <li>$70</li>
+              <li>$80</li>
+              <li>$100</li>
+              <li>$120</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-window-depilation">
+      <span onclick="closePriceDepilation()"><img src="icon/mark.svg" alt="mark"></span>
+      <div class="modal-window-depilation__img">
+        <!-- <img src="img/price-hair.jpeg" alt="price-hair"> -->
+      </div>
+      <div class="modal-window-depilation__content">
+        <h2>Hair</h2>
+        <div class="modal-window-depilation__content__text">
+          <div class="modal-window-depilation__content__text__name">
+            <ul>
+              <li><h2>Services</h2></li>
+              <li>Armpit</li>
+              <li>Arm</li>
+              <li>Leg</li>
+              <li>Face</li>
+              <li>Stomach</li>
+              <li>Bikini</li>
+            </ul>
+          </div>
+          <div class="modal-window-depilation__content__text__cost">
+            <ul>
+              <li><h2>Price</h2></li>
+              <li>$25</li>
+              <li>$30</li>
+              <li>$20 - 40</li>
+              <li>$40</li>
+              <li>$30</li>
+              <li>$50</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="services__content">
       <div class="services__content__items">
         <div class="services__content__items-content">
@@ -158,7 +413,7 @@
             <img src="icon/nail.svg" alt="nail">
           </div>
           <div class="services__content__items-content__button">
-            <button><h1>Price</h1></button>
+            <button onclick="openPriceNails()">Price</button>
           </div>
         </div>
         <div class="services__content__items-content">
@@ -169,7 +424,7 @@
               <img src="icon/face.svg" alt="face">
           </div>
           <div class="services__content__items-content__button">
-              <button><h1>Price</h1></button>
+              <button onclick="openPriceMakeUp()">Price</button>
           </div>
         </div>
         <div class="services__content__items-content">
@@ -180,7 +435,7 @@
               <img src="icon/eye.svg" alt="eye">
           </div>
           <div class="services__content__items-content__button">
-              <button><h1>Price</h1></button>
+              <button onclick="openPriceEyebrows()">Price</button>
           </div>
         </div>
       </div>
@@ -193,7 +448,7 @@
               <img src="icon/gel.svg" alt="gel">
           </div>
           <div class="services__content__items-content__button">
-              <button><h1>Price</h1></button>
+              <button onclick="openPriceCosmetology()">Price</button>
           </div>
         </div>
         <div class="services__content__items-content">
@@ -204,7 +459,7 @@
               <img src="icon/hair.svg" alt="hair">
           </div>
           <div class="services__content__items-content__button">
-              <button><h1>Price</h1></button>
+              <button onclick="openPriceHair()">Price</button>
           </div>
         </div>
         <div class="services__content__items-content">
@@ -215,7 +470,7 @@
               <img src="icon/legs.svg" alt="legs">
           </div>
           <div class="services__content__items-content__button">
-              <button><h1>Price</h1></button>
+              <button onclick="openPriceDepilation()">Price</button>
           </div>
         </div>
       </div>
@@ -226,9 +481,9 @@
     <div class="footer">
       <h1>Overview</h1>
       <p>Home</p>
+      <p>About</p>
       <p>Services</p>
       <p>Price</p>
-      <p>About</p>
       <p>Contact</p>
     </div>
     <div class="footer">
