@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" charset="utf-8"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="sign-up">
+    <div class="sign-up__pink-block">
+      <h1>Sign Up</h1>
+      <img src="lotus-flower.svg" alt="lotus-flower">
+      <h2>CactUs</h2>
+      <p>beauty space</p>
+    </div>
+    <div class="sign-up__main-form">
+      <form action="index.html" class="sign-form">
+        <!-- <h1>Login</h1> -->
+        <div class="txtb">
+          <input type="text">
+          <span data-placeholder="Username"></span>
+        </div>
+        <div class="txtb">
+          <input type="email">
+          <span data-placeholder="Email"></span>
+        </div>
+        <div class="txtb">
+            <input type="password">
+            <span data-placeholder="Password"></span>
+        </div>
+        <div class="txtb">
+            <input type="password">
+            <span data-placeholder="Retract Password"></span>
+        </div>
+        <div class="form">
+          <input type="submit" class="logbtn" value="Sign Up">
+          <div class="bottom-text">
+            <a href="../login-in/index.html">Login In</a>
+          </div>
+      </div>
+      </form>
+      <script type="text/javascript">
+
+      $(".txtb input").on("focus", function(){
+        $(this).addClass("focus");
+      });
+      
+      $(".txtb input").on("blur", function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+
+      </script>
+    </div>
+</body>
+</html>

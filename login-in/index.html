@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" charset="utf-8"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="login-in">
+    <div class="login-in__main-form">
+      <form action="index.html" class="login-form">
+        <div class="txtb">
+          <input type="text">
+          <span data-placeholder="Username"></span>
+        </div>
+        <div class="txtb">
+          <input type="password">
+          <span data-placeholder="Password"></span>
+        </div>
+        <div class="form">
+          <input type="submit" class="logbtn" value="Login In">
+          <div class="bottom-text">
+            <a href="../sign-up/index.html">Sign Up</a>
+          </div>
+      </div>
+      </form>
+      <script type="text/javascript">
+
+      $(".txtb input").on("focus", function(){
+        $(this).addClass("focus");
+      });
+      
+      $(".txtb input").on("blur", function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+
+      </script>
+    </div>
+    <div class="login-in__pink-block">
+      <h1>Login In</h1>
+      <img src="lotus-flower.svg" alt="lotus-flower">
+      <h2>CactUs</h2>
+      <p>beauty space</p>
+    </div>
+  </div>
+</body>
+</html>
