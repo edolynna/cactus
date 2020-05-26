@@ -6,6 +6,10 @@ let modalWindow4 = document.getElementsByClassName('modal-window-cosmetology')[0
 let modalWindow5 = document.getElementsByClassName('modal-window-hair')[0]
 let modalWindow6 = document.getElementsByClassName('modal-window-depilation')[0]
 
+// function openPriceNails() {
+//   modalWindow.classList.add('modal-window-nail_open') 
+// }
+
 openPriceNails = () => {
   modalWindow.classList.add('modal-window-nail_open') 
 }
