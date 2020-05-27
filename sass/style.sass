@@ -4,8 +4,6 @@ body
   margin: 0
   padding: 0
   font-family: 'Roboto', sans-serif
-  // -webkit-font-smoothing: antialiased;
-  // min-width: 1440px
 
 header
   display: flex
@@ -62,11 +60,6 @@ header
         font-size: 25px
         margin: 25px
         color: $dark-pink
-      // h1 
-      //   font-size: 25px
-      //   margin: 25px
-      //   color: $dark-pink
-
   .home-content
     display: flex
     align-items: center
@@ -97,23 +90,15 @@ header
           // border-color: $dark-pink
           border: none
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.150)
-          // color: $white
-          // font-size: 30px
-          // font-weight: bold
-          // text-decoration: none
           a 
             text-decoration: none
             color: $white
             font-size: 30px
-            // font-weight: bold
-        // button:hover 
-        //   box-shadow: 0 5px 15px 0 $dark-pink inset, 0 5px 15px 0 $dark-pink, 0 5px 15px 0 $dark-pink inset, 0 5px 15px 0 $dark-pink
     &__img 
       overflow: hidden
       width: 600px
       height: 600px
       background: url(../img/flower.jpg) no-repeat center center / cover
-
   .wrraper-home-content__text__cactus
     display: flex
     flex-direction: column
@@ -169,7 +154,7 @@ header
               width: 100%
               height: 100vh
               background-color: $dark-pink
-              position: fixed
+              // position: fixed
               a 
                 font-size: 20px
                 color: $white
@@ -184,13 +169,12 @@ header
           font-size: 9px
           margin-top: 10px
         &__button
-          // font-size: 15px
           button 
             width: 170px
             height: 40px
-            // font-size: 15px
             a 
-              font-size: 20px
+              font-size: 18px
+              font-weight: 500
       &__img
         width: 100%
         height: 300px
@@ -201,7 +185,7 @@ header
         font-size: 20px
         margin-top: 0
 
-@media screen and (min-device-width: 320px) and (max-device-width: 480px)
+@media screen and (min-device-width: 320px) and (max-device-width: 767px)
   header
     .home
       &__nav-bar
@@ -228,7 +212,7 @@ header
               width: 100%
               height: 100vh
               background-color: $dark-pink
-              position: fixed
+              // position: fixed
               a 
                 font-size: 20px
                 color: $white
@@ -263,7 +247,8 @@ header
               height: 40px
               font-size: 15px
               a 
-                font-size: 20px
+                font-size: 18px
+                font-weight: 500
         &__img
           width: 100%
           height: 350px
@@ -304,7 +289,7 @@ header
               width: 100%
               height: 100vh
               background-color: $dark-pink
-              position: fixed
+              // position: fixed
               a 
                 font-size: 25px
                 color: $white
@@ -325,9 +310,12 @@ header
             .wrraper-home-content__text__cactus
           &__button
             button 
-              width: 330px
-              height: 70px
+              width: 300px
+              height: 60px
               border-radius: 30px
+              a
+                font-size: 25px 
+                font-weight: 500
         &__img
           width: 40%
           height: 550px
@@ -471,9 +459,11 @@ header
         button
           width: 170px
           height: 40px
-          font-size: 15px
+          a
+            font-size: 18px
+            font-weight: 500
 
-@media screen and (min-device-width: 320px) and (max-device-width: 480px)
+@media screen and (min-device-width: 320px) and (max-device-width: 767px)
   .advantages
     &__content
       &__name
@@ -513,7 +503,10 @@ header
         button
           width: 170px
           height: 40px
-          font-size: 15px
+          // font-size: 18px
+          a 
+            font-size: 18px
+            font-weight: 500
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px)
   .advantages 
@@ -559,6 +552,7 @@ header
     &__img
       img 
         width: 530px
+        height: 100vh
         margin-left: 80px
     &__text
       display: flex
@@ -646,9 +640,11 @@ header
           button
             width: 170px
             height: 40px
-            font-size: 15px
+            a
+              font-size: 18px
+              font-weight: 500
 
-@media screen and (min-device-width: 320px) and (max-device-width: 480px)
+@media screen and (min-device-width: 320px) and (max-device-width: 767px)
   .about
     &__content
       height: 100%
@@ -677,7 +673,10 @@ header
           button
             width: 170px
             height: 40px
-            font-size: 15px
+            // font-size: 15px
+            a
+              font-size: 18px
+              font-weight: 500
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px)
   .about
@@ -1312,7 +1311,7 @@ header
             height: 15px
             font-size: 5px
 
-@media screen and (min-device-width: 320px) and (max-device-width: 480px)
+@media screen and (min-device-width: 320px) and (max-device-width: 767px)
   .services
     .modal-window-nail, 
     .modal-window-makeup, 
@@ -1450,18 +1449,18 @@ footer
           width: 15px
           height: 15px
 
-@media screen and (min-device-width: 320px) and (max-device-width: 480px)
+@media screen and (min-device-width: 320px) and (max-device-width: 767px)
   footer 
     height: 25vh
     .footer 
       h1 
-        font-size: 9px
+        font-size: 7px
       p 
-        font-size: 9px
+        font-size: 7px
       &__media 
         img 
-          width: 17px
-          height: 17px 
+          width: 15px
+          height: 15px 
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px)
   footer 
