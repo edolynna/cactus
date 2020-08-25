@@ -52,6 +52,10 @@ header
           text-decoration: none
           color: $black
           font-size: 18px
+          transition: 0.5s ease
+        a:hover 
+          color: $dark-pink
+          transform: scale(1.1)
     &__phone
       display: flex
       align-items: center
@@ -89,11 +93,17 @@ header
           border-radius: 35px
           // border-color: $dark-pink
           border: none
-          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.150)
+          box-shadow: $shadow
+          transition: 0.5s ease
           a 
             text-decoration: none
             color: $white
             font-size: 30px
+          &:hover
+            transform: scale(1.1)
+          // background-color: $white
+          a 
+            // color: $black
     &__img 
       overflow: hidden
       width: 600px
@@ -347,15 +357,18 @@ header
         border-radius: 30px
         // border-color: $dark-pink
         border: none
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.150)
+        box-shadow: $shadow
         color: $white
         font-size: 20px
         font-weight: bold
+        transition: 0.5s ease
         a 
           text-decoration: none
           color: $white
           font-size: 20px
           font-weight: bold
+        &:hover
+          transform: scale(1.1)
     &__name 
       display: flex
       justify-content: center
@@ -391,7 +404,7 @@ header
         height: 250px
         background-color: $dark-pink
         border-color: $dark-pink
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.150)
+        box-shadow: $shadow
         &:nth-child(2), &:nth-child(4)
           background-color: $light-pink
         img 
@@ -601,15 +614,18 @@ header
           // border-color: $dark-pink 
           border: none
           border-radius: 30px
-          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.150)
+          box-shadow: $shadow
           color: $white
           font-size: 20px
           font-weight: bold
+          transition: 0.5s ease
           a 
             text-decoration: none
             color: $white
             font-size: 20px
             font-weight: bold
+          &:hover
+            transform: scale(1.1)
 
 @media screen and (max-width: 320px)
   .about
@@ -1220,7 +1236,10 @@ header
         height: 270px
         background-color: $white
         margin: 30px
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.150)
+        box-shadow: $shadow
+        transition: 0.5s ease
+        &:hover
+          transform: scale(1.1)
         &__name
           h1
             font-size: 20px
@@ -1243,7 +1262,7 @@ header
             // border-color: $dark-pink
             border: none
             border-radius: 15px
-            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.150)
+            box-shadow: $shadow
             color: $white 
             font-size: 13px
             font-weight: bold
