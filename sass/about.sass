@@ -1,0 +1,170 @@
+@import './colors'
+
+
+
+.about
+  height: 100vh
+  background-color: $white
+  margin: 0
+  &__content
+    display: flex
+    &__img
+      img 
+        width: 530px
+        height: 100vh
+        margin-left: 80px
+    &__text
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-around
+      width: 50%
+      margin-left: 80px
+      &__name-page
+        display: flex
+        flex-direction: column
+        align-items: center
+        h1
+          color: $black 
+          font-size: 25px
+          text-transform: uppercase
+        &__img
+          display: flex
+          align-items: center
+          justify-content: center
+          hr 
+            width: 50px
+            height: 0.2px
+            background-color: $black
+            border-color: $black 
+            margin: 20px
+          img 
+            width: 30px
+            height: 30px
+      &__main-text
+        display: flex
+        flex-direction: column
+        align-items: center
+        h1 
+          text-align: center
+          color: $black 
+          font-size: 17px
+        p 
+          text-align: center
+          color: $black 
+          font-size: 17px
+          width: 75%
+      &__button
+        button
+          width: 280px
+          height: 60px
+          background-color: $dark-pink
+          // border-color: $dark-pink 
+          border: none
+          border-radius: 30px
+          box-shadow: $shadow
+          color: $white
+          font-size: 20px
+          font-weight: bold
+          transition: 0.5s ease
+          a 
+            text-decoration: none
+            color: $white
+            font-size: 20px
+            font-weight: bold
+          &:hover
+            transform: scale(1.1)
+
+@media screen and (max-width: 320px)
+  .about
+    &__content
+      height: 100%
+      &__img
+        display: none
+      &__text
+        width: 100%
+        margin-left: 0
+        h1 
+          font-size: 10px
+        &__name-page
+          &__img 
+            hr 
+              width: 30px
+              border: none
+              height: 1px
+            img 
+              width: 20px
+              height: 20px
+        &__main-text
+          h1 
+            font-size: 15px
+          p 
+            font-size: 10px
+        &__button 
+          button
+            width: 170px
+            height: 40px
+            a
+              font-size: 18px
+              font-weight: 500
+
+@media screen and (min-device-width: 320px) and (max-device-width: 767px)
+  .about
+    &__content
+      height: 100%
+      &__img
+        display: none
+      &__text
+        width: 100%
+        margin-left: 0
+        h1 
+          font-size: 15px
+        &__name-page
+          &__img 
+            hr 
+              width: 40px
+              border: none
+              height: 1px
+            img 
+              width: 25px
+              height: 25px
+        &__main-text
+          h1 
+            font-size: 17px
+          p 
+            font-size: 12px
+        &__button 
+          button
+            width: 170px
+            height: 40px
+            // font-size: 15px
+            a
+              font-size: 18px
+              font-weight: 500
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px)
+  .about
+    &__content
+      justify-content: center
+      &__img
+        display: none
+      &__text
+        margin-left: 0
+        width: 100%
+        height: 100%
+        &__name-page
+          margin: 15px
+          h1 
+            font-size: 20px
+          &__img
+            img 
+              width: 30px
+              height: 30px
+            hr 
+              width: 40px
+        &__main-text
+          margin: 30px
+          h1 
+            font-size: 19px
+          p 
+            font-size: 19px

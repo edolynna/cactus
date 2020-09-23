@@ -1,0 +1,331 @@
+@import './colors'
+
+
+header
+  display: flex
+  flex-direction: column
+  margin: 0
+  height: 100vh
+  background-color: $white
+
+  .home__nav-bar
+    display: flex
+    justify-content: space-between
+    .open-menu
+      display: none
+    &__wrraper-logo
+      display: flex
+      align-items: center
+      margin: 25px
+      &__logo-icon
+        width: 44px
+        height: 44px
+        img 
+          width: 44px
+          height: 44px
+      &__logo-text
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: -15px
+        margin-left: 5px
+        h1 
+          margin-bottom: -5px
+          font-size: 30px
+          color: $black
+          font-weight: normal
+        p 
+          margin-top: -2px
+          font-size: 10px
+          color: $black
+    &__menu
+      display: flex
+      &__nav
+        display: flex
+        align-items: center
+        a 
+          margin: 10px
+          text-decoration: none
+          color: $black
+          font-size: 18px
+          transition: 0.5s ease
+        a:hover 
+          color: $dark-pink
+          transform: scale(1.1)
+    &__phone
+      display: flex
+      align-items: center
+      a 
+        text-decoration: none
+        font-size: 25px
+        margin: 25px
+        color: $dark-pink
+  .home-content
+    display: flex
+    align-items: center
+    &__text
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: 250px
+      width: 50%
+      p 
+        color: $black
+        font-size: 15px
+        margin-top: 10px
+        margin-bottom: 30px
+      &__cactus
+        display: flex
+        flex-direction: column
+        h1 
+          font-size: 50px
+          color: $black
+          margin-top: 0
+      &__button
+        button
+          width: 350px
+          height: 80px
+          background-color: $dark-pink
+          border-radius: 35px
+          // border-color: $dark-pink
+          border: none
+          box-shadow: $shadow
+          transition: 0.5s ease
+          a 
+            text-decoration: none
+            color: $white
+            font-size: 30px
+          &:hover
+            transform: scale(1.1)
+          // background-color: $white
+          a 
+            // color: $black
+    &__img 
+      overflow: hidden
+      width: 600px
+      height: 600px
+      background: url(../img/flower.jpg) no-repeat center center / cover
+  .wrraper-home-content__text__cactus
+    display: flex
+    flex-direction: column
+    width: 470px
+    p 
+      font-size: 50px
+      color: $black
+      margin-bottom: 0
+      margin-top: 0
+      span 
+        color: $dark-pink
+        margin-right: 5px
+
+@media screen and (max-width: 320px)
+  header
+    .home
+      &__nav-bar
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .open-menu 
+          display: block
+          width: 30px
+          height: 30px
+          margin-right: 15px
+          z-index: 999999
+        &__wrraper-logo
+          margin: 20px
+          &__logo-icon
+            width: 33px
+            height: 33px
+            img 
+              width: 33px
+              height: 33px
+          &__logo-text
+            h1 
+              font-size: 20px
+              margin-top: 15px
+            p 
+              font-size: 7px
+              margin-top: 0px
+        &__menu
+          &__nav 
+            display: none
+            &_open
+              display: flex
+              align-items: center
+              position: absolute
+              left: 0
+              top: 0
+              flex-direction: column
+              justify-content: space-around
+              width: 100%
+              height: 100vh
+              background-color: $dark-pink
+              // position: fixed
+              a 
+                font-size: 20px
+                color: $white
+        &__phone
+          display: none
+    .home-content
+      flex-direction: column-reverse
+      &__text
+        margin-top: 0
+        width: 100%
+        p 
+          font-size: 9px
+          margin-top: 10px
+        &__button
+          button 
+            width: 170px
+            height: 40px
+            a 
+              font-size: 18px
+              font-weight: 500
+      &__img
+        width: 100%
+        height: 300px
+        margin-bottom: 10px
+    .wrraper-home-content__text__cactus
+      width: 100%
+      p
+        font-size: 20px
+        margin-top: 0
+
+@media screen and (min-device-width: 320px) and (max-device-width: 767px)
+  header
+    .home
+      &__nav-bar
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .open-menu 
+          display: block
+          width: 35px
+          height: 35px
+          margin-right: 15px
+          z-index: 999999
+        &__menu
+          &__nav
+            display: none
+            &_open
+              display: flex
+              align-items: center
+              position: absolute
+              left: 0
+              top: 0
+              flex-direction: column
+              justify-content: space-around
+              width: 100%
+              height: 100vh
+              background-color: $dark-pink
+              // position: fixed
+              a 
+                font-size: 20px
+                color: $white
+        &__wrraper-logo
+          margin: 20px
+          &__logo-icon
+            width: 44px
+            height: 44px
+            img 
+              width: 44px
+              height: 44px
+          &__logo-text
+            h1 
+              font-size: 22px
+              margin-top: 15px
+            p 
+              font-size: 9px
+              margin-top: 0px
+        &__phone
+          display: none
+      .home-content
+        flex-direction: column-reverse
+        &__text
+          margin-top: 0
+          width: 100%
+          p 
+            font-size: 9px
+            margin-top: 10px
+          &__button
+            button 
+              width: 170px
+              height: 40px
+              font-size: 15px
+              a 
+                font-size: 18px
+                font-weight: 500
+        &__img
+          width: 100%
+          height: 350px
+          margin-bottom: 10px
+      .wrraper-home-content__text__cactus
+        width: 100%
+        p
+          font-size: 20px
+          margin-top: 0
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px)
+  header 
+    .home
+      &__nav-bar
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .open-menu 
+          display: block
+          width: 40px
+          height: 40px
+          margin-right: 15px
+          z-index: 999999
+        &__wrraper-logo
+          &__logo-icon
+          &__logo-text
+        &__menu
+          &__nav
+            display: none
+            &_open
+              display: flex
+              align-items: center
+              position: absolute
+              left: 0
+              top: 0
+              flex-direction: column
+              justify-content: space-around
+              width: 100%
+              height: 100vh
+              background-color: $dark-pink
+              // position: fixed
+              a 
+                font-size: 25px
+                color: $white
+            &__link
+        &__phone
+          display: none
+      .home-content
+        &__text
+          width: 60%
+          height: 80%
+          margin-top: 200px
+          p 
+            font-size: 11px
+          &__cactus
+            width: 290px
+            p 
+              font-size: 30px
+            .wrraper-home-content__text__cactus
+          &__button
+            button 
+              width: 300px
+              height: 60px
+              border-radius: 30px
+              a
+                font-size: 25px 
+                font-weight: 500
+        &__img
+          width: 40%
+          height: 550px
+          // height: 80%
+          img
+            width: 550px
+            height: 550px
